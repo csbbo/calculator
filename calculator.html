@@ -146,7 +146,7 @@ var app = new Vue({
 				result = this.calculateExpression();
 				this.i ++;
 			}else{
-				while(parseInt(this.expression[this.i],16)){
+				while(parseInt(this.expression[this.i],16) || parseInt(this.expression[this.i],16)===0){
 					if (document.getElementById("select").value === "binary"){
 						result = result*2+parseInt(this.expression[this.i],2);
 					}
