@@ -291,9 +291,15 @@ var app = new Vue({
 	box-shadow: 1px 1px 5px #757575;
 	background-color: #bdbdbd;
 }
+@media screen and (max-width:800px){
+    .cal{
+        width: 90%;
+        margin-top: 0%;
+    }
+}
 .expression{
 	text-align: right;
-	color: #424242;
+	color: #004d40;
 	margin-bottom: 5px;
 	height: 20px;
 	word-break: break-all;
@@ -318,6 +324,10 @@ var app = new Vue({
 	border: none;
 	color: #424242;
 	background-color: #9e9e9e;
+}
+.select:hover{
+    color: #ffffff;
+	background-color: #5d4037;
 }
 .values{
 	padding: 5px;
@@ -352,6 +362,9 @@ var app = new Vue({
 	border-radius: 5px;
 	outline: none;
 	border: none;
+}
+.keyboard button:hover{
+	background-color: #004d40;
 }
 </style>
 </html>
