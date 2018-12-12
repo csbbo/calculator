@@ -5,7 +5,7 @@ note:
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
 	<title>进制转换计算器</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
@@ -291,10 +291,16 @@ var app = new Vue({
 	box-shadow: 1px 1px 5px #757575;
 	background-color: #bdbdbd;
 }
-@media screen and (max-width:800px){
+@media only screen and (max-width:1000px){
     .cal{
         width: 90%;
         margin-top: 0%;
+    }
+}
+@media only screen and (max-width:460px){
+    .cal{
+        width: 398px;
+	    margin-top: 0%;
     }
 }
 .expression{
